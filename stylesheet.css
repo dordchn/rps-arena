@@ -1,0 +1,26 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background-color: #222;
+  color: white;
+}
+
+h1 {
+  margin: 16px 0;
+}
+
+canvas {
+  background: white;
+}
+
+@media only screen and (max-device-width: 680px) {
+  canvas {
+    width: calc(100% - 16px);
+  }
+}
+
+a {
+  display: block;
+  margin: 8px 0;
+  color: #ccc;
+}
