@@ -3,14 +3,63 @@ body {
   text-align: center;
   background-color: #222;
   color: white;
+  padding: 16px;
+  margin: 0;
 }
 
-h1 {
+#layout {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 32px);
+  justify-content: center;
+}
+
+#menu {
+  text-align: left;
+  font-size: 18px;
+  padding-left: 16px;
+  padding-right: 64px;
+}
+
+#menu div {
+  margin: 8px 0;
+}
+
+#menu input {
+  width: 60px;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 4px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+button {
+  font-size: 20px;
+  padding: 4px 20px;
+  border: none;
+  background: #080;
+  color: white;
+  box-shadow: 1px 1px 2px #fff;
+  cursor: pointer;
   margin: 16px 0;
+}
+
+button:active {
+  box-shadow: none;
+  transform: translate(1px, 1px);
 }
 
 canvas {
   background: white;
+  height: 100%;
 }
 
 @media only screen and (max-device-width: 680px) {
@@ -20,7 +69,6 @@ canvas {
 }
 
 a {
-  display: block;
-  margin: 8px 0;
   color: #ccc;
+  font-size: 16px;
 }
