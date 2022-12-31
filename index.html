@@ -7,12 +7,14 @@
   <body>
     <div id="layout">
       <div id="menu">
-        <h1>RPS Arena</h1>
-        <div>Items count: <input id="itemsCount" type="number" value="30" /> X 3</div>
-        <div>Item size: <input id="itemSize" type="number" value="30" /></div>
-        <div>Item speed: <input id="itemSpeed" type="number" value="0.2" /></div>
-        <button>Run</button>
-        <div><a href="assets/credits.html">Credits</a></div>
+        <form>
+          <h1>RPS Arena</h1>
+          <div>Items count: <input id="itemsCount" type="number" value="30" /> X 3</div>
+          <div>Item size: <input id="itemSize" type="number" value="30" /></div>
+          <div>Item speed: <input id="itemSpeed" type="number" step="any" value="0.2" /></div>
+          <button>Run</button>
+          <div><a href="assets/credits.html">Credits</a></div>
+        </form>
       </div>
       <div id="simulator">
         <canvas></canvas>

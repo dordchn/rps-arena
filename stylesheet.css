@@ -42,7 +42,7 @@ input[type=number] {
 }
 
 button {
-  font-size: 20px;
+  font-size: 18px;
   padding: 4px 20px;
   border: none;
   background: #080;
@@ -59,12 +59,17 @@ button:active {
 
 canvas {
   background: white;
-  height: 100%;
+  width: 100%;
+  max-height: 100%;
 }
 
 @media only screen and (max-device-width: 680px) {
-  canvas {
-    width: calc(100% - 16px);
+  body {
+    padding: 0;
+  }
+  #layout {
+    flex-direction: column;
+    justify-content: start;
   }
 }
 

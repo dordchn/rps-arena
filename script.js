@@ -125,7 +125,8 @@ function mainLoop() {
   mainLoop();
 })();
 
-document.querySelector('button').addEventListener('click', evt => {
+document.querySelector('form').addEventListener('submit', evt => {
+  evt.preventDefault();
   items = [];
   loadParams();
   setTimeout(function () {
